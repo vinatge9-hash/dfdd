@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Contact - FitCore Studio</title>
+  <meta name='description' content='Get in touch with FitCore Studio for memberships, inquiries, or to book a trial class.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='bg-[#1A1A1A] text-white antialiased font-[Roboto]'>
+  <nav class='bg-[#1A1A1A] shadow-lg sticky top-0 z-50'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex justify-between items-center h-16'>
+        <div class='flex-shrink-0'>
+          <a href='index.html' class='text-2xl font-bold text-white'>FitCore Studio</a>
+        </div>
+        <div class='hidden md:block'>
+          <div class='ml-10 flex items-baseline space-x-4'>
+            <a href='index.html' class='text-white hover:text-gray-300 px-3'>Home</a>
+            <a href='about.html' class='text-white hover:text-gray-300 px-3'>About</a>
+            <a href='contact.html' class='text-white hover:text-gray-300 px-3'>Contact</a>
+          </div>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-white focus:outline-none'>
+            <svg class='h-6 w-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id='mobile-menu' class='hidden md:hidden'>
+      <a href='index.html' class='block px-4 py-2 text-white hover:bg-[#FF4500]'>Home</a>
+      <a href='about.html' class='block px-4 py-2 text-white hover:bg-[#FF4500]'>About</a>
+      <a href='contact.html' class='block px-4 py-2 text-white hover:bg-[#FF4500]'>Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class='min-h-screen w-full bg-cover bg-center flex items-center justify-center relative' style='background-image: url(https://pixabay.com/get/g304e09fa50ddff8104b2ea44c96e6e9c8db2987f2ba2a3e7519d642945b526d364e403d9a11ecb6cd71ec93405eeb45f6b39cbced3fe479aaecd8b9d484bd991_640.jpg);'>
+    <div class='absolute inset-0 bg-black opacity-60'></div>
+    <div class='relative z-10 max-w-3xl text-center px-4'>
+      <h1 class='font-[Oswald] text-4xl md:text-5xl font-bold mb-4'>Get in Touch</h1>
+      <p class='text-xl md:text-2xl mb-6 font-[Roboto]'>Have questions or want to book a trial session? Send us a message and we’ll respond promptly.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class='py-16'>
+    <div class='max-w-3xl mx-auto px-4'>
+      <form class='grid grid-cols-1 gap-4' onsubmit='return false'>
+        <input aria-label='Your Name' class='bg-[#1A1A1A] border border-gray-700 rounded-md p-3 text-white' type='text' placeholder='Your Name' required />
+        <input aria-label='Email' class='bg-[#1A1A1A] border border-gray-700 rounded-md p-3 text-white' type='email' placeholder='Email' required />
+        <textarea aria-label='Message' class='bg-[#1A1A1A] border border-gray-700 rounded-md p-3 text-white h-32' placeholder='Your Message' required></textarea>
+        <button type='submit' class='bg-[#FF4500] hover:bg-[#FF6A1F] text-white px-4 py-3 rounded-md'>Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class='bg-[#1A1A1A] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-8 text-center'>© 2025 FitCore Studio. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn) { btn.addEventListener('click', () => { menu?.classList.toggle('hidden'); }); }
+  </script>
+</body>
+</html>
