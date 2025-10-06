@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>About - FitCore Studio</title>
+  <meta name='description' content='Learn the story behind FitCore Studio, our values, and the team delivering your fitness journey.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='bg-[#1A1A1A] text-white antialiased font-[Roboto]'>
+  <nav class='bg-[#1A1A1A] shadow-lg sticky top-0 z-50'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex justify-between items-center h-16'>
+        <div class='flex-shrink-0'>
+          <a href='index.html' class='text-2xl font-bold text-white'>FitCore Studio</a>
+        </div>
+        <div class='hidden md:block'>
+          <div class='ml-10 flex items-baseline space-x-4'>
+            <a href='index.html' class='text-white hover:text-gray-300 px-3'>Home</a>
+            <a href='about.html' class='text-white hover:text-gray-300 px-3'>About</a>
+            <a href='contact.html' class='text-white hover:text-gray-300 px-3'>Contact</a>
+          </div>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-white focus:outline-none'>
+            <svg class='h-6 w-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id='mobile-menu' class='hidden md:hidden'>
+      <a href='index.html' class='block px-4 py-2 text-white hover:bg-[#FF4500]'>Home</a>
+      <a href='about.html' class='block px-4 py-2 text-white hover:bg-[#FF4500]'>About</a>
+      <a href='contact.html' class='block px-4 py-2 text-white hover:bg-[#FF4500]'>Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class='min-h-screen w-full bg-cover bg-center flex items-center justify-center relative' style='background-image: url(https://images.pexels.com/photos/4427629/pexels-photo-4427629.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);'>
+    <div class='absolute inset-0 bg-black opacity-60'></div>
+    <div class='relative z-10 max-w-3xl text-center px-4'>
+      <h1 class='font-[Oswald] text-4xl md:text-5xl font-bold mb-4'>Our Philosophy & Team</h1>
+      <p class='text-xl md:text-2xl mb-6 font-[Roboto]'>Empowering clients with clarity, integrity, and results through thoughtful training and support.</p>
+      <a href='contact.html' class='bg-[#FF4500] hover:bg-[#FF6A1F] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300'>Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class='py-16 opacity-0 transition-opacity duration-700' data-animate='true'>
+    <div class='max-w-7xl mx-auto px-4'>
+      <h2 class='font-[Oswald] text-3xl md:text-4xl mb-4'>Our Story</h2>
+      <p class='text-gray-300 leading-relaxed'>Founded on a belief in human potential, FitCore Studio began as a small coaching group and grew into a comprehensive wellness platform. We value personalized attention, continuous learning, and a community that supports growth every step of the way.</p>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class='py-16 opacity-0 transition-opacity duration-700' data-animate='true'>
+    <div class='max-w-7xl mx-auto px-4'>
+      <h2 class='font-[Oswald] text-3xl md:text-4xl mb-6'>Meet Our Team</h2>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <div class='flex items-center gap-4 bg-[#1A1A1A] p-6 rounded-lg border border-gray-700'>
+          <img src='https://pixabay.com/get/g81fa7cc76c2378950a9f4a82ded8e0032c823a6dc21b9b0213443bb416f72deb3862fe66b648c7268010be8b79f1ce1b4a354ef89242171435ef28d9440f9833_640.jpg' alt='Trainer portrait' class='w-20 h-20 rounded-full object-cover border border-gray-600'>
+          <div>
+            <h3 class='font-[Oswald] text-xl'>Jordan Lee</h3>
+            <p class='text-gray-400'>Head Coach • 12 years in coaching performance & nutrition.</p>
+          </div>
+        </div>
+        <div class='flex items-center gap-4 bg-[#1A1A1A] p-6 rounded-lg border border-gray-700'>
+          <img src='https://images.unsplash.com/photo-1582910185101-d0242660bcb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHx0cmFpbmVyJTIwcG9ydHJhaXQlMjB3aXRoJTIwYXRobGV0aWMlMjBidWlsZHxlbnwwfDB8fHwxNzU5NzM1NzM1fDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Trainer portrait' class='w-20 h-20 rounded-full object-cover border border-gray-600'>
+          <div>
+            <h3 class='font-[Oswald] text-xl'>Taylor Kim</h3>
+            <p class='text-gray-400'>Strength & Conditioning Specialist • MSc in Exercise Science.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class='bg-[#1A1A1A] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8'>
+      <div class='space-y-3'>
+        <h3 class='text-2xl font-bold'>FitCore Studio</h3>
+        <p class='text-gray-300'>Empowering you with fitness, knowledge, and a community that supports your journey.</p>
+        <p class='text-sm text-gray-400'>Address: 123 Wellness Way, City Center</p>
+      </div>
+      <div class='space-y-3'>
+        <h4 class='text-lg font-semibold'>Contact</h4>
+        <p class='text-sm text-gray-400'>Phone: (555) 987-6543</p>
+        <p class='text-sm text-gray-400'>Email: hello@fitcorestudio.example</p>
+      </div>
+      <div class='space-y-3'>
+        <h4 class='text-lg font-semibold'>Hours</h4>
+        <p class='text-sm text-gray-400'>Mon-Fri: 5:00 AM - 11:00 PM</p>
+        <p class='text-sm text-gray-400'>Sat-Sun: 6:00 AM - 9:00 PM</p>
+      </div>
+      <div class='space-y-3'>
+        <h4 class='text-lg font-semibold'>Links</h4>
+        <ul class='space-y-2'>
+          <li><a class='text-gray-300 hover:text-white' href='index.html'>Home</a></li>
+          <li><a class='text-gray-300 hover:text-white' href='about.html'>About</a></li>
+          <li><a class='text-gray-300 hover:text-white' href='contact.html'>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class='border-t border-gray-700 pt-4 pb-6 text-center text-gray-400 text-sm'>© 2025 FitCore Studio. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn) { btn.addEventListener('click', () => { menu?.classList.toggle('hidden'); }); }
+
+    const items = document.querySelectorAll('[data-animate]');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.remove('opacity-0'); obs.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1 });
+    items.forEach((el) => { obs.observe(el); });
+  </script>
+</body>
+</html>
